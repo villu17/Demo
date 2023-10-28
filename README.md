@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Make .env File OutSide the Src Folder
+
+then pase this REACT_APP_API_ENDPOINT=https://randomuser.me/api
+
 ### `npm start`
 
 Runs the app in the development mode.\
