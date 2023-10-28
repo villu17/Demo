@@ -41,15 +41,15 @@ const Dashboard = () => {
     return (
         <Fragment>
             {isLoading && <Loading />}
-            <div className="p-5">
-                <Card className="border-0">
-                    <CardBody>
-                        <div className="d-flex justify-content-between">
-                            <CardTitle tag="h5">Users Details</CardTitle>
+            <div className="p-4">
+                <Card className="border-1">
+                    <CardBody className="p-0">
+                        <div className="d-flex justify-content-between align-items-center border-bottom title">
+                            <CardTitle tag="h5" className="mb-0">Users Details</CardTitle>
                             <Button variant="resetSqare" onClick={() => setCallAPI(!callAPI)} disabled={isLoading} title={"Refersh User List"} />
                         </div>
-                        <div className="custHeight scrollWidth mt-3">
-                            <Table className="no-wrap mt-3 align-middle" responsive borderless>
+                        <div className="custHeight">
+                            <Table className="no-wrap align-middle scrollWidth" responsive borderless>
                                 <thead>
                                     <tr>
                                         <th >Name</th>
@@ -61,21 +61,21 @@ const Dashboard = () => {
                                         userData && userData ?.map((item: any, index: number) => (
                                             <tr key={index} className="border-top">
                                                 <td >
-                                                    <div className="d-flex align-items-center p-2">
+                                                    <div className="d-flex align-items-center">
                                                         <img
                                                             src={item ?.thumbnail}
                                                             className="rounded-circle"
                                                             alt="avatar"
-                                                            width="45"
-                                                            height="45"
+                                                            width="35"
+                                                            height="35"
                                                         />
                                                         <div className="ms-3">
-                                                            <h6 className="mb-0">{item ?.name ?.title} {item ?.name ?.first} {item ?.name ?.last}</h6>
+                                                            <span className="mb-0">{item ?.name ?.title} {item ?.name ?.first} {item ?.name ?.last}</span>
 
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="td-cntr"><h6>{item ?.email}</h6></td>
+                                                <td className="td-cntr"><span>{item ?.email}</span></td>
                                             </tr>
                                         ))
             }
