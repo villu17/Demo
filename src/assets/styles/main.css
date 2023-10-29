@@ -121,6 +121,11 @@ body {
     color: #7d8396;
   }
 
+  .title{
+      padding: 12px 15px;
+      border-color: var(--bs-border-color-translucent);
+  }
+
   @keyframes spin {
     0% {
       transform: rotate(0deg);
