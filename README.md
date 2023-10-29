@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### Make .env File OutSide the Src Folder
 
-then pase this REACT_APP_API_ENDPOINT=https://randomuser.me/api
+then paste this REACT_APP_API_ENDPOINT=https://randomuser.me/api
 
 ### `npm start`
 
